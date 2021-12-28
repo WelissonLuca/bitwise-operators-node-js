@@ -1,0 +1,7 @@
+{
+  "name": "bitwise-operators-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Welisson luca <welissonluca17@gmail.com>",
+  "license": "MIT"
+}
