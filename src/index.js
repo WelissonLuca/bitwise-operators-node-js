@@ -11,5 +11,6 @@ app.use(router.routes())
 
 const port = config.server.port
 
-app.listen(port)
+app
+  .listen(port)
   .on('listening', () => console.log(`Listening on port ${port}`))
