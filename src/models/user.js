@@ -11,7 +11,9 @@ module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', schema, modelOptions)
 
   User.associate = models => {
-    // associations can be defined here
+    User.belongsTo(models.Exam, {
+      foreignKey: 'patient', as: 'patient',
+    })
   }
   return User
 }
