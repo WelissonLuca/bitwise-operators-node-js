@@ -8,6 +8,7 @@ const authorized = require('./middlewares/authorization')
 // handlers
 const users = require('./handlers/users')
 const auth = require('./handlers/auth')
+const exam = require('./handlers/exam')
 
 const { authorization: authorizationConfig } = require('../config')
 
@@ -20,10 +21,9 @@ router.use(error)
 router.get('/users', authenticated, authorized(permissions.manageUsers), users.getAllUsers)
 router.post('/users', authenticated, users.createUser)
 
-router.get('/exams', authenticated, authorized(permissions.manageExams), async (ctx, next) => {
-  ctx.body = 'exams'
-  await next()
-})
+router.get('/exams', authenticated, authorized(permissions.manageExams), exam.getAllExams)
+router.get('/exams/:id', authenticated, authorized(permissions.manageExams), exam.getExamById)
+router.post('/exams', authenticated, authorized(permissions.manageExams), exam.createExam)
 
 router.get(
   '/personalInfo',
