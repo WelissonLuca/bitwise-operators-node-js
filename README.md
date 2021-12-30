@@ -1,19 +1,3 @@
-# [Template] Implementando Autorização em Node.js com Bitwise Operators
-
-<img src="https://storage.googleapis.com/golden-wind/experts-club/capa-github.svg" />
-
-*Esse repositório não contém o código finalizado e sim o template para dar início à aula.*
-
-No nosso cotidiano, dificilmente lidamos com representações binárias e muito menos bom bitwise operators. Entre os motivos podem estar a dificuldade no entendimento ou a falta de aplicações práticas.
-
-Neste workshop eu trago uma implementação de autorização para acesso a recursos utilizando bitwise operators, que pode ser interessante conhecer.
-
-## Expert
-
-| [<img src="https://avatars.githubusercontent.com/u/711732?s=460&u=6b1039f8a921c5733d92d13b2971c55157fee005&v=4" width="75px;"/>](https://github.com/askmon) |
-| :-: |
-|[André Spanguero Kanayama](https://github.com/askmon)|
-
 ## Rodando o projeto
 
 Este projeto consiste de uma API feita em Node.js que consome um banco PostgreSQL. Há um arquivo `.nvmrc` no projeto caso queira realizar a instalação usando o [nvm](https://github.com/nvm-sh/nvm).
